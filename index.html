@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form validation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="formContainer">
+        <h2>Registeration</h2>
+        <form action="" onsubmit="return validateForm()">
+            <input type="text" placeholder="User Name" name="" id="username"><br>
+            <p id="userError" class="error"></p>
+            <input type="text" placeholder="Email" id="userEmail"><br>
+            <p id="mailError"></p>
+            <input type="number" placeholder="Phone Number" name="" id="phoneNumber"><br>
+            <p id="phoneNoError" class="error"></p>
+            <input type="password" placeholder="Password" name="" id="password"><br>
+            <p id="passError" class="error"></p>
+            <input type="password" placeholder="Confirm Password" name="" id="cPassword"><br>
+            <p id="confPassError" class="error"></p>
+            <span id="cont" style="color: blue;"></span>
+            <input class="generate" type="button" value="Generate Capcha" onclick="fun()"><br>
+            <input type="text" placeholder="Capcha" name="" id="capcha"><br>
+            <p id="capchaError" class="error"></p>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
